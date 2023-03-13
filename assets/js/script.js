@@ -1,22 +1,15 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+// variables
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-}
-//  window.alert(`Your password is xxx`);
+  // password questions
+  var numberEl = window.confirm("Do you want to include numbers?");
 
-// display password on screen.
-// password.innerHTML = `Your password is here`;
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-function generatePassword() {
   // getting and checking length of password
   lengthEl = window.prompt(
     "Please choose a password length between 8 and 128 characters. "
@@ -27,37 +20,18 @@ function generatePassword() {
       "Please choose a password length between 8 and 128 characters."
     );
   }
-
-  // numberEl = window.confirm("Do you want to include numbers?");
-
-  // specialEl = window.confirm("Do yo want to include special characters?");
-
-  // lowerEl = window.confirm("Do you want to include lower case letters?");
-
-  // upperEl = window.confirm("Do you want to include upper case letters?");
-
-  // window.alert(`numbers included ${numberEl}`);
-
-  // var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-
-  // // var special = ["!","#","$","%","(",")"];
-
-  // // var letters = ["a","b","c","d","e","f","g","h"]
-
-  // var index = Math.floor(Math.random() * number.length);
-
-  // var choice = number[index];
-
-  // console.log(`var choice = ${choice}`);
-  // console.log(` var index = ${index}`);
-
-  function random_item(items) {
-    return items[Math.floor(Math.random() * lengthEl)];
+  if (lengthEl) {
+    console.log("yes");
   }
+  passwordText.value = password;
+}
 
-  var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-  console.log(random_item(items));
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
-  return_items();
+function generatePassword() {
+  password = 5;
+
+  return password;
 }
 // the yellow curly brace is for the fnc
