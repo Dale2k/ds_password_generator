@@ -54,11 +54,12 @@ function generatePassword() {
     console.log(`all value is ${allEl}`);
   }
 
+  if (!lower && !upper && !special && !number) {
+    alert("Please choose at least one type");
+  }
+
   // function end
 }
-
-// password questions
-// var numberEl = window.confirm("Do you want to include numbers?");
 
 // Write password to the #password input
 function writePassword() {
