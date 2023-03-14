@@ -69,8 +69,6 @@ function generatePassword() {
     pass += allEl.charAt(Math.floor(Math.random() * allEl.length));
   }
 
-  console.log(pass);
-
   return pass;
 
   // function end
@@ -81,4 +79,6 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
+
+  console.log(`this is password value ${password}`);
 }
