@@ -1,10 +1,18 @@
 # 03 JavaScript: Password Generator
 
-## Your Task
+## URL and Github Deployed
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+Depository Name:
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+ds_password_generator
+
+URL:
+
+https://github.com/Dale2k/ds_password_generator
+
+deployed address:
+
+
 
 ## User Story
 
@@ -38,64 +46,55 @@ THEN the password is either displayed in an alert or written to the page
 
 The following image shows the web application's appearance and functionality:
 
-![The Password Generator application displays a red button to "Generate Password".](./assets/03-javascript-homework-demo.png)
+![The Password Generator application displays a red button to "Generate Password".](./assets/Images/javascript-homework-demo.png)
 
-## Grading Requirements
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> - A repository that has no code
->
-> - A repository that includes a unique name but nothing else
->
-> - A repository that includes only a README file but nothing else
->
-> - A repository that only includes starter code
 
-This Challenge is graded based on the following criteria:
 
-### Technical Acceptance Criteria: 40%
+![Password length 20 characters selected](./assets/Images/Password_Length_20_Selection.png)
 
-- Satisfies all of the preceding acceptance criteria.
 
-### Deployment: 32%
 
-- Application deployed at live URL.
 
-- Application loads with no errors.
+![Lower Case letter chioice](./assets/Images/Lower_Case_Choice.png)
 
-- Application GitHub URL submitted.
 
-- GitHub repository that contains application code.
 
-### Application Quality: 15%
 
-- Application user experience is intuitive and easy to navigate.
+![Upper Case letter chioice](./assets/Images/Upper_Case_Choice.png)
 
-- Application user interface style is clean and polished.
 
-- Application resembles the mock-up functionality provided in the Challenge instructions.
 
-### Repository Quality: 13%
 
-- Repository has a unique name.
 
-- Repository follows best practices for file structure and naming conventions.
+![Special Characters chioice](./assets/Images/Special_Char_Choice.png)
 
-- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-- Repository contains multiple descriptive commit messages.
 
-- Repository contains quality readme file with description, screenshot, and link to deployed application.
 
-## Review
+![20 Character Password Generated](./assets/Images/20_Character_Password_Generated.png)
 
-You are required to submit the following for review:
+### Errors
 
-- The URL of the deployed application.
 
-- The URL of the GitHub repository, with a unique name and a readme describing the project.
+![Invalid Password length chosen](./assets/Images/Invalid_Length_Message.png)
 
----
 
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+![Invalid Password length chosen](./assets/Images/Invalid_Length_Output.png)
+
+
+No valid length or any characters chosen.
+
+![No valid choices input](./assets/Images/Message_No_Valid_Choices_Input.png)
+
+
+
+
+
+
+
+
+
+
+
+
