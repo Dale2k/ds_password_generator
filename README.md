@@ -12,7 +12,7 @@ https://github.com/Dale2k/ds_password_generator
 
 deployed address:
 
-
+https://dale2k.github.io/ds_password_generator/
 
 ## User Story
 
