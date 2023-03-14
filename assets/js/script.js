@@ -1,16 +1,20 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-// variables
 
+// question possibilities
 var lowerEl = "abcdefghijklmnopqrstuvwxyz";
 var upperEl = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var specialEl = "$%&()*+<=>?@";
 var numberEl = "0123456789";
+// allEl to hold hold selections
 var allEl = " ";
+// return value to hold clip of allEl.
+var pass = " ";
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-  // password = 5;
-  // return password;
   // getting and checking length of password
   lengthEl = window.prompt(
     "Please choose a password length between 8 and 128 characters. "
@@ -23,6 +27,7 @@ function generatePassword() {
   }
 
   // password questions
+  // ++ only for increasing by number and += for increasing by anything.
   var lower = confirm("Do you want to include lower case letters?");
   if (lower && lengthEl) {
     allEl += lowerEl;
@@ -54,9 +59,19 @@ function generatePassword() {
     console.log(`all value is ${allEl}`);
   }
 
-  if (!lower && !upper && !special && !number) {
-    alert("Please choose at least one type");
+  if ((!lower && !upper && !special && !number) || !lengthEl) {
+    alert(
+      "Please choose at least one type and/or a password length between 8 and 128 characters"
+    );
   }
+  // loop starts at 0 so "<" will include the proper length.
+  for (i = 0; i < lengthEl; i++) {
+    pass += allEl.charAt(Math.floor(Math.random() * allEl.length));
+  }
+
+  console.log(pass);
+
+  return pass;
 
   // function end
 }
@@ -67,6 +82,3 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
