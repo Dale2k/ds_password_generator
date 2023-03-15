@@ -14,6 +14,15 @@ var pass = " ";
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
+
+  console.log(`this is password value ${password}`);
+}
+
 function generatePassword() {
   // getting and checking length of password
   lengthEl = window.prompt(
@@ -67,18 +76,10 @@ function generatePassword() {
   // loop starts at 0 so "<" will include the proper length.
   for (i = 0; i < lengthEl; i++) {
     pass += allEl.charAt(Math.floor(Math.random() * allEl.length));
+    console.log(pass[i]);
   }
 
   return pass;
 
   // function end
-}
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-  passwordText.value = password;
-
-  console.log(`this is password value ${password}`);
 }
