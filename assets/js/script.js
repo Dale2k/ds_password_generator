@@ -33,6 +33,7 @@ function generatePassword() {
     window.alert(
       "Please choose a password length between 8 and 128 characters."
     );
+    return generatePassword();
   }
 
   // password questions
